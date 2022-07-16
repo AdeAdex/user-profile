@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User Profile</title>
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="icon" type="image/x-icon" href="pic/ade.png">
+   
+</head>
+<body onload="sub()">
+	<div id="mainContainer">
+		<div id="navContainer">
+			<div id="logoNtext">
+				<div id="logoNav">
+					<img src="ade.png" class="logoImg">
+				</div>
+				<div id="textNav">
+					<h2> My finance dashboard</h2>
+					<span>Welcome to Adex payment portal</span>
+				</div>
+			</div>
+			<div id="detailsNav">
+				<div id="msg" title="Messages">
+					<i class="fas fa-envelope" style=""></i>
+					<div class="messageCount">5</div>
+				</div>
+				<div id="notice" title="Notification">
+					<i class="fas fa-bell" style=""></i>
+					<div class="notificationCount">26</div>
+				</div>
+				<div id="userNav">
+					<img src="Adeolu Amole.jpg" class="userImg">
+					<span class="userTxt">Adex <button class="dropbtn" onclick="myFunction()"><i class="fa fa-caret-down" ></i></button></span>
+					<div id="myDropdown" class="dropdown-content">
+						<div id="dropdown-content-div" class="dropdowncontentlinks" onclick="openDropdown(event, 'dropdownContainer')"><i class="fas fa-home"></i><button  id="defaultHome">Home</button></div>
+						<div id="dropdown-content-div" class="dropdowncontentlinks" onclick="openDropdown(event, 'dropdownContainer2')"><i class="fas fa-comments"></i><button >Chat</button></div>
+						<div id="dropdown-content-div" class="dropdowncontentlinks" onclick="openDropdown(event, 'dropdownContainer3')"><i class="fas fa-cog"></i><button >Settings</button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contentContainer">
+			<div id="leftContainer">
+				<div id="sidebarContainer">
+					<h2>Dashboard<i class="fas fa-"></i></h2>
+	  				<button class="tablinks" onclick="openCity(event, 'detailsContainer')" id="defaultOpen">Personal Details</button>
+	  				<button class="tablinks" onclick="openCity(event, 'detailsContainer2')">Cart</button>
+	  				<button class="tablinks" onclick="openCity(event, 'detailsContainer3')">Reaction</button>
+	  				<button class="tablinks" onclick="openCity(event, 'detailsContainer4')">Edit Profile</button>
+	  				<button class="tablinks" onclick="openCity(event, 'detailsContainer5')">Help</button>
+	  				<button class="tablinks" onclick="openCity(event, 'detailsContainer6')">About</button>
+	  			</div>
+
+  				<div id="statsContainer">
+  					AUDIENCE STATS
+  					<div id="statsDiv">
+	  					<div class="slides"><div id="jan">Jan 2022</div></div>
+	  					<div class="slides"><div id="sfeb">Feb 2022</div></div>
+	  					<div class="slides"><div id="mar">Mar 2022</div></div>
+	  					<div class="slides"><div id="apr">Apr 2022</div></div>
+	  					<div class="slides"><div id="may">May 2022</div></div>
+	  					<div class="slides"><div id="jun">Jun 2022</div></div>
+  					</div>
+
+
+					<div style="text-align:center" id="dots">
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					  <span class="dot"></span> 
+					</div>
+  				</div>
+
+  				<div class="social">
+  					<h3>Reach Us On:</h3>
+  					<div>
+	  					<a href="#" class="fab fa-facebook"></a>
+	  					<a href="#" class="fab fa-whatsapp"></a>
+	  					<a href="#" class="fab fa-twitter"></a>
+	  					<a href="#" class="fab fa-instagram"></a>
+	  					<a href="#" class="fab fa-youtube"></a>
+	  					<a href="#" class="fab fa-linkedin"></a>
+	  				</div>
+	  				<div id="toggle">
+	  					<i onclick="myFunc(this)" class="fa fa-thumbs-down"></i>
+	  				</div>
+  				</div>
+			</div>
+
+			
+
+			<div id="detailsContainer" class="tabcontent">
+				<div id="contentRow1">
+					<img src="Adeolu Amole.jpg" class="contentRow1Img">
+				</div>
+					<h6>Responsive Web Developer</h6>
+				<div id="contentRow2">
+						<div class="d"><div id="details">Name: </div><div id="name" class="personalDetails"></div></div>
+						<div class="d"><div id="details">Birth Date: </div><div id="dob" class="personalDetails">22-10-1992</div></div>
+						<div class="d"><div id="details">Age: </div><div id="age" class="personalDetails">30</div></div>
+						<div class="d"><div id="details">Phone No: </div><div id="phoneNo" class="personalDetails">07033959586</div></div>
+						<div class="d"><div id="details">E-mail: </div><div id="email" class="personalDetails">adeoluamole@gmail.com</div></div>
+						<div class="d"><div id="details">Address: </div><div id="address" class="personalDetails">Ibadan, Nigeria</div></div>
+						<div class="d"><div id="details">Gender: </div><div id="gender" class="personalDetails">Male</div></div>
+						<div class="d"><div id="details">Height: </div><div id="height" class="personalDetails">174.2 cm</div></div>
+						<div class="d"><div id="details">State of Origin: </div><div id="soo" class="personalDetails">Oyo</div></div>
+				</div>
+			</div>
+
+			<div id="detailsContainer2" class="tabcontent">
+				<div class="product-col">
+		              
+		              <div class="col1">
+		                  <img src="pic/lap.png" class="col-img" title="This is a laptop" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 699.00 
+		                  
+		                  <img src="pic/Shoe 17.jpg" class="col-img" title="This is a Men Shoe" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 95.00 
+		                   
+		                  <img src="pic/New-Fashion-Women.png" class="col-img" title="This is a 4in1 Flash Drive" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 35.00
+		                   
+		                  <img src="pic/bag 3.jpg" class="col-img" title="This is a female bag" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 19.00 
+		                  
+		              </div>
+		              
+
+		              <div class="col3">
+		                  <img src="pic/jean 8.jpg" class="col-img" title="This is a male jean" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 25.00
+
+		                  <img src="pic/bag 12.jpg" class="col-img" title="This is a female bag" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 19.00
+		                  
+		                  <img src="pic/bag 5.jpg" class="col-img" title="This is a female bag" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 42.00 
+		                  
+		                  <img src="pic/Ladies choice.png" class="col-img" title="This is a female choice" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 17.00
+		                  
+		              </div>
+		              
+
+		              <div class="col2">
+		                  <img src="pic/Screenshot_2.png" class="col-img" title="This is a Ladies Fashion bag" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 245.00 
+		                   
+		                  <img src="pic/cloth 4.jpg" class="col-img" title="This is a cloth" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 85.00 
+		                   
+		                  <img src="pic/women choice.jpg" class="col-img" title="This is a women choice Shoe" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 40.00
+		                  
+		                  <img src="pic/ring.gif" class="col-img" title="This is a ring" alt="Image not found">
+		                  <i class="fas fa-dollar-sign"></i> 12.00 
+		                  
+		              </div>
+		      </div>
+			</div>
+
+
+			<div id="detailsContainer3" class="tabcontent">
+					<div class="reactionRow1">
+						<div id="reactionRow11">
+							<div id="reactionImgDiv"><img src="Adeolu Amole.jpg" class="reactionImg"></div>
+							<div id="reactionNameDiv" class="fullName"></div>
+						</div>
+						<div class="reactionRow12">
+							<div id="chat"><i class="fas fa-thumbs-up"></i><span>125</span></div>
+							<div id="like"><i class="fas fa-comment"></i><span>78</span></div>
+							<div id="fav"><i class="fas fa-heart"></i><span>12</span></div>
+						</div>
+					</div>
+					<div class="reactionRow2">
+						<div id="map"><i class="fas fa-times"></i><h3>Lagos/Nigeria</h3></div>
+						<div id="weather">
+							<div id="date">
+								<h5 class="cal">Fri 15/07</h5>
+								<h1>24<i class=""></i></h1>
+							</div>
+							<div id="climate"><i class="fas fa-cloud-sun-rain"></i></div>
+						</div>
+					</div>
+			</div>
+
+
+			<div id="detailsContainer4" class="tabcontent">
+					<form name="input" action="/action_page.php" method="get" target="_top" onsubmit="return confirmMatch()">
+					<div id="updiv">
+						<div for="Photo" id="upload"></div>
+						<div id="pic"><input type="file" class="pic" name="upload pic" value="browze"></div>
+					</div>
+					<div id="info">
+						<label for="fname"> first name:
+							<input type="text" name="fname" class="in" placeholder="Enter Your Firstname">
+						</label>
+						<label for="lname"> last name:
+							<input type="text" name="lname" class="in" placeholder="Enter Your Lastname">
+						</label>
+						<!--<label for="username"> username:
+							<input type="text" name="username" class="in" placeholder="Enter your username">
+						</label>!-->
+						<label for="e-mail"> e-mail:
+							<input type="email" name="email" class="in" placeholder="you@example.com">
+						</label>
+						<label for="address"> address:
+							<input type="text" name="address" class="address">
+						</label>
+						<label for="phoneNo"> phone number:
+							<input type="tel" name="telephone" class="in">
+						</label>
+						<label  for="Gender" class="gender"> gender:
+							<label for="male" class="genderop1"> male: 
+								<input type="radio" name="genderinpt" value="Male" checked="checked">
+							</label>
+							<label for="female" class="genderop2"> female: 
+								<input type="radio" name="genderinpt" value="Female">
+							</label>
+						</label>
+						<label  for="dob" class="dob">Date of Birth:
+							<input type="date" id="dateInp" name="datemax" max="1985/12/31">
+						</label>
+						<label id="tooltip1" for="newPassword"> new password:
+							<span id="tooltiptext1"><i class="fas fa-warning" style="color: red" id="hey"></i></span>
+							<input type="password" name="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}" class="in" placeholder="Enter Password" id="pass" onkeyup="checkValid()" required>
+						</label>
+						<label id="tooltip" for="confirmPassword"> confirm password:
+							<span id="tooltiptext"></span>
+							<input type="password" name="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}" class="in" placeholder="Confirm Password" onkeyup="confirmPasswordInp()" id="confirmPass" required>
+						</label>
+						<div id="fontDiv">
+							<i class="fas fa-check-circle" id="font1" style="font-size: 20px;"></i><i class="fa fa-times" id="font2" style="font-size: 20px"></i>
+						</div>
+						<div id="showPasswordDiv"><span id="show">Show Password</span><input type="checkbox" name="show-password" onclick="showPassword()" id="checkBox"></div>
+						<div id="bottomdiv">
+							<button type="submit" value="Update" class="ok">Update</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div id="detailsContainer5" class="tabcontent">
+				<div id="contentRow1">
+					<div class="row1Div1"></div>
+					<div class="row1Div2"> 5 5</div>
+				</div>
+				<div id="contentRow2">
+					<div class="row2Div1"></div>
+					<div class="row2Div2"></div>
+				</div>
+			</div>
+
+			<div id="detailsContainer6" class="tabcontent">
+				<div id="contentRow1">
+					<div class="row1Div1"></div>
+					<div class="row1Div2"> six</div>
+				</div>
+				<div id="contentRow2">
+					<div class="row2Div1"></div>
+					<div class="row2Div2"></div>
+				</div>
+			</div>
+
+
+			
+
+
+			<div id="signContainer">
+
+				<div id="dropdownContainer" class="dropdown">
+					<div id="home1">
+						<h3>join the newsletter</h3>
+						<div class="home1Inp"><i class="fas fa-envelope"></i><input type="email" name="" placeholder="Enter your email, e.g example@gmail.com"></div>
+						<button type="submit">subscribe</button>
+					</div>
+					<div id="home2">
+						<h3>sign in to your account</h3>
+						<div class="home2Inp"><i class="fas fa-envelope"></i><input type="email" name="" class="home2InpTxt" placeholder="Email address"></div>
+						<div class="home2Inp"><i class="fas fa-lock"></i><input type="password" name="" class="home2InpPass" placeholder="Password"></div>
+						<button class="signin">sign in</button>
+						<span><a href="forgot_password.html">forgot password?</a></span>
+						<button class="facebook"><a href="www.facebook.com"><i class="fab fa-facebook"></i> Sign in with Facebook</a></button>
+						<button class="google"><a href="www.google.com"><i class="fab fa-google"></i> Sign in with Google</a></button>
+					</div>
+				</div>
+
+				<div id="dropdownContainer2" class="dropdown">
+				<h2>Chat Message</h2>
+				<div id="scrollin">
+					<div class="chat-container">
+						<img src="comment.jpg" alt="Avatar" style="width: 100%;">
+						<p class="chat-text">Hello, How are you today</p>
+						<span class="time-right">11:00am</span>
+					</div>
+
+					<div class="chat-container darker">
+						<img src="Adeolu Amole.jpg" alt="Avatar" style="width: 100%;" class="right">
+						<p class="chat-text-right">Am super cool, what about you?</p>
+						<span class="time-left">11:03am</span>
+					</div>
+
+					<div class="chat-container">
+						<img src="comment.jpg" alt="Avatar" style="width: 100%;">
+						<p class="chat-text">Am great and happy to chat with you</p>
+						<span class="time-right">11:05am</span>
+					</div>
+
+					<div class="chat-container darker">
+						<img src="Adeolu Amole.jpg" alt="Avatar" style="width: 100%;" class="right">
+						<p class="chat-text-right">Wow! thats nice to hear. Its my pleasure dear.</p>
+						<span class="time-left">11:06am</span>
+					</div>
+
+					<div class="chat-container">
+						<img src="comment.jpg" alt="Avatar" style="width: 100%;">
+						<p class="chat-text">Where do you stay now and where do you work right now?</p>
+						<span class="time-right">11:10am</span>
+					</div>
+
+					<div class="chat-container darker">
+						<img src="Adeolu Amole.jpg" alt="Avatar" style="width: 100%;" class="right">
+						<p class="chat-text-right">Anyway i stay at lagos and work @coding as a front-end web developer. Wanna do something now, Bye</p>
+						<span class="time-left">11:12am</span>
+					</div>
+
+					<div class="chat-container">
+						<img src="comment.jpg" alt="Avatar" style="width: 100%;">
+						<p class="chat-text">Thats Beautiful. We shall talk better another time. Bye! </p>
+						<span class="time-right">11:15am</span>
+					</div>
+
+					<!--<div class="chat-container darker">
+						<img src="Adeolu Amole.jpg" alt="Avatar" style="width: 100%;" class="right">
+						<p class="chat-text-right">Bye!.</p>
+						<span class="time-left">11:15am</span>
+					</div>!-->
+				</div>
+				</div>
+
+				<div id="dropdownContainer3" class="dropdown">
+				<h2>Last</h2>
+				<div class="chat-container">
+					<img src="Adeolu Amole.jpg" alt="Avatar" style="width: 100%;">
+					<p class="chat-text">Hello, How are you today</p>
+					<span class="time-right">11:00am</span>
+				</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	 <script type="text/javascript" src="profile.js" ></script>
+</body>
+</html>
