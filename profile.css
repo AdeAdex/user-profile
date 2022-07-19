@@ -410,7 +410,7 @@ body{
 }
 
 #jan{
-  width: 30%;
+  width: 26%;
   height: 130px;
   border-top: 20px solid skyblue;
   border-left: 20px solid aqua;
@@ -427,7 +427,7 @@ body{
 }
 
 #sfeb{
-  width: 30%;
+  width: 26%;
   height: 130px;
   border-radius: 50%;
   border-width: ;
@@ -445,7 +445,7 @@ body{
 }
 
 #mar{
-  width: 30%;
+  width: 26%;
   height: 130px;
   border-radius: 50%;
   border-width: ;
@@ -463,7 +463,7 @@ body{
 }
 
 #apr{
-  width: 30%;
+  width: 26%;
   height: 130px;
   border-radius: 50%;
   border-width: ;
@@ -481,7 +481,7 @@ body{
 }
 
 #may{
-  width: 30%;
+  width: 26%;
   height: 130px;
   border-radius: 50%;
   border-width: ;
@@ -499,7 +499,7 @@ body{
 }
 
 #jun{
-  width: 30%;
+  width: 26%;
   height: 130px;
   border-radius: 50%;
   border-width: ;
@@ -540,12 +540,13 @@ body{
   background-color: #1f2544;
   border-radius: 10px;
   margin-top: 20px;
+  padding: 10px;
 }
 
 .social h3{
   text-align: center;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: monospace;
   padding-top: 15px;
 }
@@ -558,8 +559,8 @@ body{
 }
 
 .fa-facebook{
-  color: #3b5998;
-  background: white;
+  color: white;
+  background: #3b5998;
   padding-left: ;
   padding-right: ;
 }
@@ -576,25 +577,23 @@ body{
   background: #e1306c;
 }
 .fa-youtube{
-  color: #bb0000;
-  background-color: white;
+  color: white ;
+  background-color: #bb0000;
 }
 .fa-linkedin{
-  color: #3b5460;
-  background-color: white;
+  color: white;
+  background-color: #125688;
 
 }
 
 .fab{
-  padding: ;
-  font-size: 30px;
-  width: 30px;
-  height: ;
-  text-decoration: none;
+  padding: 10px;
+  font-size: 25px;
+  width: 45px;
   text-align: center;
-  border-radius: 50%;
+  text-decoration: none;
   margin: 5px 15px;
-  background-color: ;
+  border-radius: 50%;
 }
 
 #toggle .fa{
